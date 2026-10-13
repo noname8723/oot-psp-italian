@@ -1,0 +1,18 @@
+# Mai pubblicare file del gioco, ROM o traduzioni altrui
+*.z64
+*.n64
+*.v64
+*.rom
+*.ips
+*.IPS
+*.bps
+*.ups
+*.xdelta
+*.PBP
+*.pbp
+*.prx
+*.bin
+output_it/
+diagnosi.txt
+__pycache__/
+*.pyc
