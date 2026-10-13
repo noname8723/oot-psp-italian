@@ -8,7 +8,7 @@ E' un adattamento del patcher spagnolo di Unbekantte (licenza MIT):
 https://github.com/Unbekantte/oot-psp-spanish-patcher
 
 Questo strumento utilizza la traduzione di XXCentury nel 2001, all'
-epoca in escusiva sul sito forum Clomax Dominion oggi noto come 
+epoca in esclusiva sul sito forum Clomax Dominion oggi noto come 
 romhacking.it, per tanto la patch NON è inclusa.
 
 Questo strumento è stato creato totalmente da Claude di proprietà di Anthropic
