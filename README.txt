@@ -7,6 +7,13 @@ Ocarina of Time (https://github.com/z2442/oot-PSP).
 E' un adattamento del patcher spagnolo di Unbekantte (licenza MIT):
 https://github.com/Unbekantte/oot-psp-spanish-patcher
 
+Questo strumento utilizza la traduzione di XXCentury nel 2001, all'
+epoca in escusiva sul sito forum Clomax Dominion oggi noto come 
+romhacking.it, per tanto la patch NON è inclusa.
+
+Questo strumento è stato creato totalmente da Claude di proprietà di Anthropic
+
+
 
 AVVISO LEGALE IMPORTANTE
 ------------------------
@@ -27,7 +34,7 @@ una copia di cui sei legittimo proprietario.
 PRIMA DI INIZIARE: COSA DEVI GIA' AVERE
 ---------------------------------------
 1. Il gioco oot-PSP GIA' FUNZIONANTE IN INGLESE.
-   Cioe' hai gia' scaricato/compilato il port dal repository originale
+   Cioe' hai gia' compilato il port dal repository originale
    (https://github.com/z2442/oot-PSP), messo la tua ROM nella cartella
    "data" e avviato il gioco almeno una volta, aspettando che finisse la
    preparazione iniziale. Se il gioco in inglese non parte, sistemalo prima:
@@ -46,7 +53,7 @@ PRIMA DI INIZIARE: COSA DEVI GIA' AVERE
 4. Python 3 installato (https://www.python.org/downloads/).
    Durante l'installazione spunta "Add python.exe to PATH".
 
-NON funziona con ROM PAL, USA 1.1 / 1.2, Master Quest o randomizer.
+NON funziona con ROM PAL, USA 1.1 / 1.2.
 
 
 I FILE DEL PORT CHE SERVONO
@@ -64,17 +71,15 @@ cioe' mai patchati:
 PASSO PER PASSO
 ---------------
 PASSO 1 - Prepara una cartella di lavoro
-   Crea una cartella nuova, per esempio:   C:\patch_italiano
-   Mettici dentro questi file:
+   Crea una cartella nuova mettici dentro questi file:
 
      oot_psp_it_patch.py      (da questo repository)
      avvia_patcher.bat        (da questo repository)
      baserom.z64              (la tua ROM USA NTSC 1.0)
      TRADUZIONE.ips           (la patch italiana, il nome puo' essere
-                               qualsiasi; deve essercene UNA sola)
+                               qualsiasi)
      EBOOT.PBP                (copiato dal tuo gioco, originale)
-     oot_psp_assets.bin       (copiato da data\segments del tuo gioco,
-                               originale)
+     oot_psp_assets.bin       (copiato da data\segments\oot_psp_assets.bin)
 
 PASSO 2 - Avvia il patcher
    Fai doppio clic su  avvia_patcher.bat
@@ -148,27 +153,11 @@ Il gioco e' ancora in inglese
    I file non sono stati sostituiti, oppure oot_psp_assets.bin e' stato
    cancellato e ricreato dal gioco.
 
-Altri problemi
-   Avvia avvia_diagnosi.bat: crea diagnosi.txt (non modifica nulla).
-   Allegalo quando segnali un problema. Non allegare mai ROM o file del
-   gioco.
-
-
 COSA NON C'E' IN QUESTO REPOSITORY
 ----------------------------------
 Solo script e istruzioni. NON ci sono e non vanno mai pubblicati qui:
 ROM (originali o modificate), EBOOT.PBP, oot_psp_assets.bin, la patch .ips
 e i testi della traduzione. Ognuno usa i propri file.
-
-
-COME FUNZIONA (per i curiosi)
------------------------------
-Il port legge i dialoghi da oot_psp_assets.bin con una tabella dentro
-EBOOT.PBP. Lo script prende dalla ROM tradotta i dialoghi e il font, li
-scrive in oot_psp_assets.bin e modifica la tabella dell'EBOOT. Le
-dimensioni dei file non cambiano e i file originali non vengono toccati:
-lo script scrive solo in output_it, alla fine, se tutti i controlli sono
-passati.
 
 
 CREDITI E LICENZA
@@ -177,6 +166,6 @@ Codice sotto licenza MIT (vedi LICENSE).
  - Patcher originale (spagnolo): Unbekantte
  - Port nativo PSP: z2442 e collaboratori
  - Decompilazione: zeldaret/oot
- - Traduzione italiana: [INSERIRE AUTORE E LINK ALLA PATCH]
+ - Traduzione italiana: [XXCentury]
 Strumento non affiliato a Nintendo. "The Legend of Zelda" e "Ocarina of
 Time" sono marchi registrati di Nintendo.
